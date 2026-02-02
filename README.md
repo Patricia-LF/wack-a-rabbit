@@ -1,5 +1,56 @@
 # wack-a-rabbit
 
+A simple web-based game built with HTML, CSS and JavaScript.
+
+**Run locally**
+- **Open file:** You can double-click `index.html` for a quick test.
+- **Recommended (local server):** Start a simple server in the project folder and open `http://localhost:8000` in your browser.
+
+  Python 3:
+  ```bash
+  python3 -m http.server 8000
+  ```
+
+  (Optional) If you have Node.js, you can use `http-server`:
+  ```bash
+  npx http-server -c-1
+  ```
+
+**Development**
+- Use the VS Code extension Live Server for live reload during development.
+
+**Publishing to GitHub**
+- Create a new repository on GitHub (for example `wack-a-rabbit`).
+- In the project folder, run:
+
+```bash
+git init
+git add .
+git commit -m "Initial commit"
+git branch -M main
+# Replace USERNAME/REPO with your GitHub account
+# SSH:
+git remote add origin git@github.com:USERNAME/REPO.git
+# or HTTPS:
+git remote add origin https://github.com/USERNAME/REPO.git
+git push -u origin main
+```
+
+If your push is rejected because the remote contains commits, fetch and rebase first:
+
+```bash
+git pull --rebase origin main
+git push -u origin main
+```
+
+**Tips**
+- Add a `.gitignore` (examples: `*.log`, `.env`).
+- Consider adding a `LICENSE` and more documentation if needed.
+
+---
+_Automatically updated to add run and GitHub instructions._
+# wack-a-rabbit
+
 Ett enkelt webbaserat spel byggt med HTML, CSS och JavaScript.
 
 **Kör lokalt**
@@ -11,15 +62,9 @@ Ett enkelt webbaserat spel byggt med HTML, CSS och JavaScript.
   python3 -m http.server 8000
   ```
 
-  Node (npx http-server):
+  (Valfritt) Alternativ med `http-server` om du har Node:
   ```bash
   npx http-server -c-1
-  ```
-
-  Om projektet har ett `start`-script i `package.json`:
-  ```bash
-  npm install
-  npm start
   ```
 
 **Utveckling**
@@ -50,7 +95,7 @@ git push -u origin main
 ```
 
 **Tips**
-- Lägg till en `.gitignore` (exempel: `node_modules/`, `*.log`, `.env`).
+- Lägg till en `.gitignore` (exempel: `*.log`, `.env`).
 - Lägg gärna till en kort `LICENSE` och fler instruktioner här om du vill.
 
 ---
